@@ -7,6 +7,7 @@ output: md_document
 library(tidyverse)
 library(magrittr)
 library(readxl)
+library(ggplot2)
 ```
 
 # Graph Color Palettes
@@ -15,5 +16,13 @@ Are you looking for a highly contrasting color palette that works well in graphs
 
 Here is a collection of color palettes that I like to use.
 
+```{r echo=FALSE}
+bar_data <- tibble(item=c("A", "B", "C"), count=c(4,5,3))
+ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position = "none")
+```
 
 More to come...
