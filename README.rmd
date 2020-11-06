@@ -16,13 +16,19 @@ Are you looking for a highly contrasting color palette that works well in graphs
 
 Here is a collection of color palettes that I like to use.
 
+## ggplot Palettes
+
+One of the most common triadic color schemes for statstical plots is the base color palette from R's ggplot package:
+
 ```{r echo=FALSE}
-bar_data <- tibble(item=c("A", "B", "C"), count=c(4,5,3))
+bar_data <- tibble(item=c("#F8766D", "#00BA38", "#619CFF"), count=c(4,5,3))
 ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   geom_bar(stat="identity") +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         legend.position = "none")
+ggsave(filename="ggplotStandard3.png", path="README_files/")
 ```
+<img src="README_files/ggplotStandard.png"/>
 
 More to come...
