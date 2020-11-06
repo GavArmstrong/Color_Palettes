@@ -22,13 +22,13 @@ One of the most common triadic color schemes for statstical plots is the base co
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("#F8766D", "#00BA38", "#619CFF"), count=c(4,5,3))
-ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   geom_bar(stat="identity") +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         legend.position = "none")
-ggsave(filename="ggplotStandard3.pdf", path="README_files/")
+ggsave(a, filename="ggplotStandard3.pdf", path="README_files/")
 ```
-<img src="README_files/ggplotStandard.pdf"/>
+<img src="README_files/ggplotStandard3.pdf"/>
 
 More to come...
