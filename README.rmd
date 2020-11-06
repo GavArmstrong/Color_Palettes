@@ -29,6 +29,6 @@ a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
         legend.position = "none")
 ggsave(a, filename="ggplotStandard3.pdf", path="README_files/")
 ```
-<img src="README_files/ggplotStandard3.pdf"/>
+<img src="ggplotStandard3.pdf"/>
 
 More to come...
