@@ -12,6 +12,6 @@ R’s ggplot
 One of the most common triadic color schemes for statstical plots is the
 base color palette from R’s ggplot package:
 
-<img src="ggplotStandard3.pdf"/>
+<img src="ggplotStandard3.png"/>
 
 More to come…
