@@ -13,7 +13,7 @@ One of the most common triadic color schemes for statstical plots is the
 base color palette from R’s ggplot2 package. The standard discrete color
 palette for three colors produced through ggplot2 is the following:
 
-(\#F8766D, \#00BA38, \#619CFF)
+(\#EC746B, \#60BB3B, \#619CFB)
 
 <img src="ggplotStandard3.png" width=500 height=300/>
 

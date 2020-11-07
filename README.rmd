@@ -20,10 +20,10 @@ Here is a collection of color palettes that I like to use.
 
 One of the most common triadic color schemes for statstical plots is the base color palette from R's ggplot2 package. The standard discrete color palette for three colors produced through ggplot2 is the following:
 
-(\#F8766D, \#00BA38, \#619CFF)
+(\#EC746B, \#60BB3B, \#619CFB)
 
 ```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("#F8766D", "#00BA38", "#619CFF"), count=c(4,5,3))
+bar_data <- tibble(item=c("#619CFB", "#EC746B", "#60BB3B"), count=c(4,5,3))
 a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   geom_bar(stat="identity") +
   theme(axis.title.x = element_blank(),
