@@ -27,9 +27,9 @@ a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         legend.position = "none")
-ggsave(a, filename="ggplotStandard3.png", width=3, height=2)
+ggsave(a, filename="ggplotStandard3.png")
 ```
-<img src="ggplotStandard3.png"/>
+<img src="ggplotStandard3.png" width=500 height=300/>
 
 
 More to come...
