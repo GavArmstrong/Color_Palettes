@@ -29,7 +29,7 @@ a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         legend.position = "none")
-ggsave(a, filename="ggplotStandard3.png")
+ggsave(a, filename="ggplotStandard3.png", width=5, height=3)
 ```
 <img src="ggplotStandard3.png" width=500 height=300/>
 
