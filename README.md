@@ -25,4 +25,10 @@ ggplot2 has additional discrete palettes of contrasting colors.
 
 Four colors:
 
-<img src="ggplotStandard4.png" width=500 height=300/> More to come…
+<img src="ggplotStandard4.png" width=500 height=300/>
+
+Five colors:
+
+<img src="ggplotStandard5.png" width=500 height=300/>
+
+More to come…

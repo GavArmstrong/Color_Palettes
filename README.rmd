@@ -56,4 +56,21 @@ a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
 ggsave(a, filename="ggplotStandard4.png", width=5, height=3)
 ```
 <img src="ggplotStandard4.png" width=500 height=300/>
+
+Five colors:
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg"), count=c(4,5,3,4,5))
+bar_data$item <- factor(bar_data$item,levels = c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard5.png", width=5, height=3)
+```
+<img src="ggplotStandard5.png" width=500 height=300/>
+
+
 More to come...
