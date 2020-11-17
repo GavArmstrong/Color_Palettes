@@ -70,6 +70,7 @@ a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
         legend.position = "none")
 ggsave(a, filename="ggplotStandard5.png", width=5, height=3)
 ```
+
 <img src="ggplotStandard5.png" width=500 height=300/>
 
 
