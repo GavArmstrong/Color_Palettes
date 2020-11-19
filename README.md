@@ -31,4 +31,8 @@ Five colors:
 
 <img src="ggplotStandard5.png" width=500 height=300/>
 
+Six colors:
+
+<img src="ggplotStandard6.png" width=500 height=300/>
+
 More to come…
