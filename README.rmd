@@ -74,6 +74,7 @@ ggsave(a, filename="ggplotStandard5.png", width=5, height=3)
 
 <img src="ggplotStandard5.png" width=500 height=300/>
 
+
 Six colors:
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg", "Hij"), count=c(4,5,3,4,5,3))
