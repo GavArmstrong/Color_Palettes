@@ -42,6 +42,7 @@ ggsave(a, filename="ggplotStandard3.png", width=5, height=3)
 
 ggplot2 has additional discrete palettes of contrasting colors.
 
+
 Four colors:
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB", "Abc"), count=c(4,5,3,4))
