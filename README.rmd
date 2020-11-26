@@ -38,6 +38,7 @@ ggsave(a, filename="ggplotStandard3.png", width=5, height=3)
 ```
 <img src="ggplotStandard3.png" width=500 height=300/>
 
+
 ### Four plus colors
 
 ggplot2 has additional discrete palettes of contrasting colors.
