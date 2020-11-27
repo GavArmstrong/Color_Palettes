@@ -24,6 +24,7 @@ One of the most common triadic color schemes for statstical plots is the base co
 
 (\#EC746B, \#60BB3B, \#619CFB)
 
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB"), count=c(4,5,3))
 bar_data$item <- factor(bar_data$item,levels = c("#EC746B", "#60BB3B", "#619CFB"))
