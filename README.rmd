@@ -18,7 +18,6 @@ Here is a collection of color palettes that I like to use.
 
 ## ggplot2 (R programming language)
 
-
 ### Triadic Colors
 
 One of the most common triadic color schemes for statstical plots is the base color palette from R's ggplot2 package. The standard discrete color palette for three colors produced through ggplot2 is the following:
