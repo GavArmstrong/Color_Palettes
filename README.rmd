@@ -18,69 +18,14 @@ Here is a collection of color palettes that I like to use.
 
 ## ggplot2 (R programming language)
 
-### Triadic Colors
+### Contrasting Color Palettes
 
-One of the most common triadic color schemes for statstical plots is the base color palette from R's ggplot2 package. The standard discrete color palette for three colors produced through ggplot2 is the following:
+One of the most common color schemes for statstical plots is the base color palette from R's ggplot2 package. The standard discrete color palettes for ggplot2 and some variations are as follows:
 
-(\#EC746B, \#60BB3B, \#619CFB)
-
-
+ colors:
 ```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB"), count=c(4,5,3))
-bar_data$item <- factor(bar_data$item,levels = c("#EC746B", "#60BB3B", "#619CFB"))
-a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
-  geom_bar(stat="identity") +
-  theme(axis.title.x = element_blank(),
-        axis.text.x = element_text(size=12),
-        axis.title.y = element_blank(),
-        axis.text.y = element_text(size=12),
-        legend.position = "none")
-ggsave(a, filename="ggplotStandard3.png", width=5, height=3)
-```
-<img src="ggplotStandard3.png" width=500 height=300/>
-
-
-### Four plus colors
-
-ggplot2 has additional discrete palettes of contrasting colors.
-
-Four colors:
-```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB", "Abc"), count=c(4,5,3,4))
-bar_data$item <- factor(bar_data$item,levels = c("#EC746B", "#60BB3B", "#619CFB", "Abc"))
-a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
-  geom_bar(stat="identity") +
-  theme(axis.title.x = element_blank(),
-        axis.text.x = element_text(size=12),
-        axis.title.y = element_blank(),
-        axis.text.y = element_text(size=12),
-        legend.position = "none")
-ggsave(a, filename="ggplotStandard4.png", width=5, height=3)
-```
-<img src="ggplotStandard4.png" width=500 height=300/>
-
-
-Five colors:
-```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg"), count=c(4,5,3,4,5))
-bar_data$item <- factor(bar_data$item,levels = c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg"))
-a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
-  geom_bar(stat="identity") +
-  theme(axis.title.x = element_blank(),
-        axis.text.x = element_text(size=12),
-        axis.title.y = element_blank(),
-        axis.text.y = element_text(size=12),
-        legend.position = "none")
-ggsave(a, filename="ggplotStandard5.png", width=5, height=3)
-```
-
-<img src="ggplotStandard5.png" width=500 height=300/>
-
-
-Six colors:
-```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg", "Hij"), count=c(4,5,3,4,5,3))
-bar_data$item <- factor(bar_data$item,levels = c("#EC746B", "#60BB3B", "#619CFB", "Abc", "Efg", "Hij"))
+bar_data <- tibble(item=c("A", "B", "C", "D", "E", "F"), count=c(4,5,3,4,5,3))
+bar_data$item <- factor(bar_data$item,levels = c("A", "B", "C", "D", "E", "F"))
 a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   geom_bar(stat="identity") +
   theme(axis.title.x = element_blank(),
