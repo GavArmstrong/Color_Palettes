@@ -17,6 +17,10 @@ palettes for ggplot2 and some variations are as follows:
 
 colors:
 
-<img src="ggplotStandard6.png" width=500 height=300/>
+<img src="ggplotStandard1.png" width=500 height=300/>
+
+<img src="ggplotStandard2.png" width=500 height=300/>
+
+<img src="ggplotStandard10.png" width=500 height=300/>
 
 More to come…
