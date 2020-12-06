@@ -39,8 +39,8 @@ ggsave(a, filename="ggplotStandard1.png", width=5, height=3)
 <img src="ggplotStandard1.png" width=500 height=300/>
 
 ```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("A", "B"), count=c(1,1))
-bar_data$item <- factor(bar_data$item,levels = c("A", "B"))
+bar_data <- tibble(item=c("A","B"), count=c(1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B"))
 a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   geom_bar(stat="identity") +
   theme(axis.title.x = element_blank(),
@@ -54,8 +54,113 @@ ggsave(a, filename="ggplotStandard2.png", width=5, height=3)
 <img src="ggplotStandard2.png" width=500 height=300/>
 
 ```{r echo=FALSE, message=FALSE}
-bar_data <- tibble(item=c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
-bar_data$item <- factor(bar_data$item,levels = c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"))
+bar_data <- tibble(item=c("A","B","C"), count=c(1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard3.png", width=5, height=3)
+```
+
+<img src="ggplotStandard3.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D"), count=c(1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard4.png", width=5, height=3)
+```
+
+<img src="ggplotStandard4.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E"), count=c(1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard5.png", width=5, height=3)
+```
+
+<img src="ggplotStandard5.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F"), count=c(1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard6.png", width=5, height=3)
+```
+
+<img src="ggplotStandard6.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G"), count=c(1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard7.png", width=5, height=3)
+```
+
+<img src="ggplotStandard7.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H"), count=c(1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard8.png", width=5, height=3)
+```
+
+<img src="ggplotStandard8.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I"), count=c(1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard9.png", width=5, height=3)
+```
+
+<img src="ggplotStandard9.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J"), count=c(1,1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J"))
 a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
   geom_bar(stat="identity") +
   theme(axis.title.x = element_blank(),
@@ -67,5 +172,95 @@ ggsave(a, filename="ggplotStandard10.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard10.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K"), count=c(1,1,1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard11.png", width=5, height=3)
+```
+
+<img src="ggplotStandard11.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L"), count=c(1,1,1,1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard12.png", width=5, height=3)
+```
+
+<img src="ggplotStandard12.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M"), count=c(1,1,1,1,1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard13.png", width=5, height=3)
+```
+
+<img src="ggplotStandard13.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N"), count=c(1,1,1,1,1,1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard14.png", width=5, height=3)
+```
+
+<img src="ggplotStandard14.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"), count=c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard15.png", width=5, height=3)
+```
+
+<img src="ggplotStandard15.png" width=500 height=300/>
+
+```{r echo=FALSE, message=FALSE}
+bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
+bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"))
+a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+  geom_bar(stat="identity") +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(size=12),
+        axis.title.y = element_blank(),
+        axis.text.y = element_text(size=12),
+        legend.position = "none")
+ggsave(a, filename="ggplotStandard16.png", width=5, height=3)
+```
+
+<img src="ggplotStandard16.png" width=500 height=300/>
 
 More to come...

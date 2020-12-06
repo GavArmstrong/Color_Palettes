@@ -21,6 +21,32 @@ colors:
 
 <img src="ggplotStandard2.png" width=500 height=300/>
 
+<img src="ggplotStandard3.png" width=500 height=300/>
+
+<img src="ggplotStandard4.png" width=500 height=300/>
+
+<img src="ggplotStandard5.png" width=500 height=300/>
+
+<img src="ggplotStandard6.png" width=500 height=300/>
+
+<img src="ggplotStandard7.png" width=500 height=300/>
+
+<img src="ggplotStandard8.png" width=500 height=300/>
+
+<img src="ggplotStandard9.png" width=500 height=300/>
+
 <img src="ggplotStandard10.png" width=500 height=300/>
+
+<img src="ggplotStandard11.png" width=500 height=300/>
+
+<img src="ggplotStandard12.png" width=500 height=300/>
+
+<img src="ggplotStandard13.png" width=500 height=300/>
+
+<img src="ggplotStandard14.png" width=500 height=300/>
+
+<img src="ggplotStandard15.png" width=500 height=300/>
+
+<img src="ggplotStandard16.png" width=500 height=300/>
 
 More to come…
