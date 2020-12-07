@@ -263,4 +263,5 @@ ggsave(a, filename="ggplotStandard16.png", width=5, height=3)
 
 <img src="ggplotStandard16.png" width=500 height=300/>
 
+
 More to come...
