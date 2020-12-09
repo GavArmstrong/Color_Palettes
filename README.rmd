@@ -38,6 +38,8 @@ ggsave(a, filename="ggplotStandard1.png", width=5, height=3)
 
 <img src="ggplotStandard1.png" width=500 height=300/>
 
+2
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B"), count=c(1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B"))
@@ -52,6 +54,8 @@ ggsave(a, filename="ggplotStandard2.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard2.png" width=500 height=300/>
+
+3
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C"), count=c(1,1,1))
@@ -68,6 +72,8 @@ ggsave(a, filename="ggplotStandard3.png", width=5, height=3)
 
 <img src="ggplotStandard3.png" width=500 height=300/>
 
+4
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D"), count=c(1,1,1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D"))
@@ -82,6 +88,8 @@ ggsave(a, filename="ggplotStandard4.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard4.png" width=500 height=300/>
+
+5
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E"), count=c(1,1,1,1,1))
@@ -98,6 +106,8 @@ ggsave(a, filename="ggplotStandard5.png", width=5, height=3)
 
 <img src="ggplotStandard5.png" width=500 height=300/>
 
+6
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F"), count=c(1,1,1,1,1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F"))
@@ -112,6 +122,8 @@ ggsave(a, filename="ggplotStandard6.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard6.png" width=500 height=300/>
+
+7
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G"), count=c(1,1,1,1,1,1,1))
@@ -128,6 +140,8 @@ ggsave(a, filename="ggplotStandard7.png", width=5, height=3)
 
 <img src="ggplotStandard7.png" width=500 height=300/>
 
+8
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H"), count=c(1,1,1,1,1,1,1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H"))
@@ -142,6 +156,8 @@ ggsave(a, filename="ggplotStandard8.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard8.png" width=500 height=300/>
+
+9
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I"), count=c(1,1,1,1,1,1,1,1,1))
@@ -158,6 +174,8 @@ ggsave(a, filename="ggplotStandard9.png", width=5, height=3)
 
 <img src="ggplotStandard9.png" width=500 height=300/>
 
+10
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J"), count=c(1,1,1,1,1,1,1,1,1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J"))
@@ -172,6 +190,8 @@ ggsave(a, filename="ggplotStandard10.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard10.png" width=500 height=300/>
+
+11
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K"), count=c(1,1,1,1,1,1,1,1,1,1,1))
@@ -188,6 +208,8 @@ ggsave(a, filename="ggplotStandard11.png", width=5, height=3)
 
 <img src="ggplotStandard11.png" width=500 height=300/>
 
+12
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L"), count=c(1,1,1,1,1,1,1,1,1,1,1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L"))
@@ -202,6 +224,8 @@ ggsave(a, filename="ggplotStandard12.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard12.png" width=500 height=300/>
+
+13
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M"), count=c(1,1,1,1,1,1,1,1,1,1,1,1,1))
@@ -218,6 +242,8 @@ ggsave(a, filename="ggplotStandard13.png", width=5, height=3)
 
 <img src="ggplotStandard13.png" width=500 height=300/>
 
+14
+
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N"), count=c(1,1,1,1,1,1,1,1,1,1,1,1,1,1))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N"))
@@ -232,6 +258,8 @@ ggsave(a, filename="ggplotStandard14.png", width=5, height=3)
 ```
 
 <img src="ggplotStandard14.png" width=500 height=300/>
+
+15
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"), count=c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1))
