@@ -22,7 +22,7 @@ Here is a collection of color palettes that I like to use.
 
 One of the most common color schemes for statstical plots is the base color palette from R's ggplot2 package. The standard discrete color palettes for ggplot2 and some variations are as follows:
 
-<img src="GGPlot Color Palettes - R 16 Base 1.png" width=500 height=300/>
+<img src="GGPlot Color Palettes - R 16 Base 1.png" width=650 height=630/>
 
 ```{r echo=FALSE, message=FALSE}
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
