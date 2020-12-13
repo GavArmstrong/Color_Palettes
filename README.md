@@ -15,7 +15,7 @@ One of the most common color schemes for statstical plots is the base
 color palette from R’s ggplot2 package. The standard discrete color
 palettes for ggplot2 and some variations are as follows:
 
-<img src="GGPlot Color Palettes - R 16 Base 1.png" width=500 height=300/>
+<img src="GGPlot Color Palettes - R 16 Base 1.png" width=650 height=630/>
 
 <img src="ggplotStandard16.png" width=500 height=300/>
 
