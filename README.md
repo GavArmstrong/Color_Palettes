@@ -37,7 +37,7 @@ achieved.
 
     a <- ggplot(line_data, aes(x=time, y=count, color=var_n)) +
       geom_line(size=0.7) +
-      labs(title="ggplot2 lineplot with 8 variables",
+      labs(title="ggplot2 Lineplot With 8 Variables",
            color="Variable") +
       theme(axis.title.x = element_blank(),
             axis.text.x = element_blank(),
@@ -51,14 +51,14 @@ achieved.
 <img src="ggplotLine16.png" width=750 height=450/>
 
 <details>
-<summary>ggplot2 barplot using 16 colors (Code) </summary>
+<summary>ggplot2 Barplot With 16 Colors (Code) </summary>
 
     bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
     bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"))
 
     a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
       geom_bar(stat="identity") +
-      labs(title="ggplot2 barplot using 16 colors") +
+      labs(title="ggplot2 Barplot With 16 Colors") +
       theme(axis.title.x = element_blank(),
             axis.text.x = element_text(size=12),
             axis.title.y = element_blank(),
