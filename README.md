@@ -24,6 +24,6 @@ achieved.
 
 <img src="ggplotLine16.png" width=750 height=450/>
 
-<img src="ggplotStandard16.png" width=700 height=450/>
+<img src="ggplotStandard16.png" width=700 height=400/>
 
 More to come…

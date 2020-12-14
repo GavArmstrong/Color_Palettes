@@ -68,7 +68,7 @@ a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
 ggsave(a, filename="ggplotStandard16.png", width=5, height=3)
 ```
 
-<img src="ggplotStandard16.png" width=700 height=450/>
+<img src="ggplotStandard16.png" width=700 height=400/>
 
 
 More to come...
