@@ -23,15 +23,15 @@ with a large number of variables, clear and contrasting plots can be
 achieved.
 
 <details>
-<summary>ggplot Lineplot With 8 Variables </summary>
+<summary>ggplot Lineplot With 8 Variables (Code) </summary>
 
-    time_stops <- 50
+    time_steps <- 50
     num_vars <- 8
-    line_data <- tibble(time=rep(1:time_stops, num_vars),
-                        count=runif(time_stops*num_vars,1,7) + rep(runif(num_vars,1,200), each=time_stops),
-                        var_n=rep(LETTERS[1:num_vars], each=time_stops))
+    line_data <- tibble(time=rep(1:time_steps, num_vars),
+                        count=runif(time_steps*num_vars,1,7) + rep(runif(num_vars,1,200), each=time_steps),
+                        var_n=rep(LETTERS[1:num_vars], each=time_steps))
     line_data %<>% group_by(var_n) %>%
-      mutate(count = count + (time^(1.03))*runif(1,-1,1)*50/time_stops) %>%
+      mutate(count = count + (time^(1.03))*runif(1,-1,1)*50/time_steps) %>%
       ungroup() %>%
       mutate(count = count + 5*sin(time/5) + time^(1.03)/10)
 
@@ -50,6 +50,24 @@ achieved.
 </details>
 <img src="ggplotLine16.png" width=750 height=450/>
 
+<details>
+<summary>ggplot2 barplot using 16 colors (Code) </summary>
+
+    bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
+    bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"))
+
+    a <- ggplot(bar_data, aes(x=item, y=count, fill=item)) +
+      geom_bar(stat="identity") +
+      labs(title="ggplot2 barplot using 16 colors") +
+      theme(axis.title.x = element_blank(),
+            axis.text.x = element_text(size=12),
+            axis.title.y = element_blank(),
+            axis.text.y = element_blank(),
+            legend.position = "none",
+            axis.ticks.y = element_blank())
+    ggsave(a, filename="ggplotStandard16.png", width=5, height=3)
+
+</details>
 <img src="ggplotStandard16.png" width=700 height=400/>
 
 More to come…
