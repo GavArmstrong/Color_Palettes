@@ -22,8 +22,8 @@ These are some of my favorite color combinations. We can see that, even
 with a large number of variables, clear and contrasting plots can be
 achieved.
 
-<img src="ggplotLine16.png" width=500 height=300/>
+<img src="ggplotLine16.png" width=700 height=600/>
 
-<img src="ggplotStandard16.png" width=500 height=300/>
+<img src="ggplotStandard16.png" width=700 height=600/>
 
 More to come…
