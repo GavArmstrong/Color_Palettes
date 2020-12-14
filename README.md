@@ -25,6 +25,10 @@ achieved.
 <details>
 <summary>ggplot Lineplot With 8 Variables (Code) </summary>
 
+    library(tidyverse)
+    library(magrittr)
+    library(ggplot2)
+
     time_steps <- 50
     num_vars <- 8
     line_data <- tibble(time=rep(1:time_steps, num_vars),
@@ -52,6 +56,10 @@ achieved.
 
 <details>
 <summary>ggplot2 Barplot With 16 Colors (Code) </summary>
+
+    library(tidyverse)
+    library(magrittr)
+    library(ggplot2)
 
     bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
     bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"))

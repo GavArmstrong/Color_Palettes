@@ -30,6 +30,10 @@ These are some of my favorite color combinations. We can see that, even with a l
   <summary>ggplot Lineplot With 8 Variables (Code) </summary>
   
 ```{r echo=TRUE, message=FALSE}
+library(tidyverse)
+library(magrittr)
+library(ggplot2)
+
 time_steps <- 50
 num_vars <- 8
 line_data <- tibble(time=rep(1:time_steps, num_vars),
@@ -61,6 +65,10 @@ ggsave(a, filename="ggplotLine16.png", width=5, height=3)
   <summary>ggplot2 Barplot With 16 Colors (Code) </summary>
 
 ```{r echo=TRUE, message=FALSE}
+library(tidyverse)
+library(magrittr)
+library(ggplot2)
+
 bar_data <- tibble(item=c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"), count=c(4,5,3,4,5,3,2,5,3,4,5,3,4,5,4,3))
 bar_data$item <- factor(bar_data$item,levels = c("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"))
 
