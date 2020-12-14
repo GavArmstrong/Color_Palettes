@@ -22,20 +22,34 @@ These are some of my favorite color combinations. We can see that, even
 with a large number of variables, clear and contrasting plots can be
 achieved.
 
-<img src="ggplotLine16.png" width=750 height=450/>
-
 <details>
-<summary>Code</summary>
+<summary>ggplot Lineplot With 8 Variables </summary>
 
-Heading
--------
+    time_stops <- 50
+    num_vars <- 8
+    line_data <- tibble(time=rep(1:time_stops, num_vars),
+                        count=runif(time_stops*num_vars,1,7) + rep(runif(num_vars,1,200), each=time_stops),
+                        var_n=rep(LETTERS[1:num_vars], each=time_stops))
+    line_data %<>% group_by(var_n) %>%
+      mutate(count = count + (time^(1.03))*runif(1,-1,1)*50/time_stops) %>%
+      ungroup() %>%
+      mutate(count = count + 5*sin(time/5) + time^(1.03)/10)
 
-1.  A numbered
-2.  list
-    -   With some
-    -   Sub bullets
+    a <- ggplot(line_data, aes(x=time, y=count, color=var_n)) +
+      geom_line(size=0.7) +
+      labs(title="ggplot2 lineplot with 8 variables",
+           color="Variable") +
+      theme(axis.title.x = element_blank(),
+            axis.text.x = element_blank(),
+            axis.title.y = element_blank(),
+            axis.text.y = element_blank(),
+            axis.ticks.x = element_blank(),
+            axis.ticks.y = element_blank())
+    ggsave(a, filename="ggplotLine16.png", width=5, height=3)
 
 </details>
+<img src="ggplotLine16.png" width=750 height=450/>
+
 <img src="ggplotStandard16.png" width=700 height=400/>
 
 More to come…
