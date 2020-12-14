@@ -11,9 +11,10 @@ ggplot2 (R programming language)
 
 ### Contrasting Color Palettes
 
-One of the most common color schemes for statstical plots is the base
-color palette from R’s ggplot2 package. The standard discrete color
-palettes for ggplot2 and some variations are as follows:
+One of the most common discrete color schemes for statstical plots is
+that of R’s ggplot2 package. The standard palettes vary as the number of
+variables increase, although the same low-hue version of red is common
+to all. The first 16 color combinations are as follows:
 
 <img src="GGPlot Color Palettes - R 16 Base 1.png" width=650 height=630/>
 
