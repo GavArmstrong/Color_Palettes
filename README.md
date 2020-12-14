@@ -24,6 +24,18 @@ achieved.
 
 <img src="ggplotLine16.png" width=750 height=450/>
 
+<details>
+<summary>Code</summary>
+
+Heading
+-------
+
+1.  A numbered
+2.  list
+    -   With some
+    -   Sub bullets
+
+</details>
 <img src="ggplotStandard16.png" width=700 height=400/>
 
 More to come…
