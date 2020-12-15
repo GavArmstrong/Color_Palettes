@@ -23,7 +23,9 @@ with a large number of variables, clear and contrasting plots can be
 achieved.
 
 <details>
-<summary>ggplot Lineplot With 8 Variables (Code) </summary>
+<summary>
+ggplot Lineplot With 8 Variables (Code)
+</summary>
 
     library(tidyverse)
     library(magrittr)
@@ -52,10 +54,13 @@ achieved.
     ggsave(a, filename="ggplotLine16.png", width=5, height=3)
 
 </details>
+
 <img src="ggplotLine16.png" width=750 height=450/>
 
 <details>
-<summary>ggplot2 Barplot With 16 Colors (Code) </summary>
+<summary>
+ggplot2 Barplot With 16 Colors (Code)
+</summary>
 
     library(tidyverse)
     library(magrittr)
@@ -76,6 +81,7 @@ achieved.
     ggsave(a, filename="ggplotStandard16.png", width=5, height=3)
 
 </details>
+
 <img src="ggplotStandard16.png" width=700 height=400/>
 
 More to come…
