@@ -26,6 +26,7 @@ One of the most common discrete color combinations for statstical plots comes fr
 
 These are some of my favorite color combinations. We can see that, even with a large number of variables, clear and contrasting plots can be achieved.
 
+
 <details>
   <summary>ggplot Lineplot With 8 Variables (Code) </summary>
   
